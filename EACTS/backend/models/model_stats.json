@@ -1,0 +1,42 @@
+{
+  "best_model": "Linear Regression",
+  "feature_cols": [
+    "CPU_Usage (%)",
+    "RAM_Usage (MB)",
+    "Disk_IO (MB/s)",
+    "Network_IO (MB/s)",
+    "Priority",
+    "VM_ID",
+    "Execution_Time (s)"
+  ],
+  "model_results": {
+    "Linear Regression": {
+      "r2": 0.8304,
+      "mse": 0.006347,
+      "pred_speed_ms": 0.0002
+    },
+    "Random Forest": {
+      "r2": 0.8195,
+      "mse": 0.006755,
+      "pred_speed_ms": 0.0064
+    },
+    "Neural Network": {
+      "r2": 0.8185,
+      "mse": 0.006791,
+      "pred_speed_ms": 0.0009
+    }
+  },
+  "dataset_stats": {
+    "total_rows": 20000,
+    "n_features": 7,
+    "target_col": "Energy_Consumption",
+    "avg_cpu": 0.4986,
+    "avg_ram": 0.499,
+    "avg_exec_time": 0.5004,
+    "priority_dist": {
+      "0.0": 0.3362,
+      "0.5": 0.3348,
+      "1.0": 0.329
+    }
+  }
+}
